@@ -10,7 +10,7 @@ questions <- read_csv("questions.csv")
 ## UI ----
 ui <- fluidPage(
   
-  h1("Delta Presentations Icebreaker"),
+  h1("Delta Group Review Presentations Icebreaker"),
   
   hr(),
   
@@ -28,14 +28,14 @@ ui <- fluidPage(
   br(),
   
   h3("2. Glows and Grows"),
-  h4("Please share a positive experience (achivement, something you are proud of) AND something that you think you can improve or learn from this past year working on the synthesis project"),
+  h4("Please share a positive experience (achivement, something you are proud of) AND something that you think you can improve or learn from this past year working on your synthesis project"),
   
   
   br(),
   br(),
   
   
-  h3("3. Choose a number from 1-17 to see who comes next"),
+  h3("3. Choose a number from 1-16 to choose who comes next"),
   
     # Copy the line below to make a number input box into the UI.
     textInput("num_input", 
@@ -75,8 +75,7 @@ ui <- fluidPage(
                               choices = list("13" = 13,
                                              "14" = 14,
                                              "15" = 15,
-                                             "16" = 16,
-                                             "17" = 17))
+                                             "16" = 16))
     ) #END 3rd column
     
     
